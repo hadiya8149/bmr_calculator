@@ -152,3 +152,10 @@ div.branding > div > h1{
   margin:auto;
   margin-top:20%;
 }
+.container{
+  padding-top:55px;
+  margin-top:5px;
+}
+.form-container{
+  margin-left:10%;
+}

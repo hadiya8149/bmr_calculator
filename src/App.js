@@ -4,7 +4,6 @@ import './App.css';
 import {Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import {Component} from"react"
 import Navbar from "./components/navbar"
-import About from "./components/about";
 import CalcForm from "./components/Cal2bmr";
 import Login from "./components/login"
 class App extends Component {
@@ -31,7 +30,7 @@ class App extends Component {
         Cal2
       </div>
       <Routes>
-        <Route exact path='/' element={<CalcForm />}></Route>
+        <Route index path='/' element={<CalcForm />}></Route>
         <Route path='/login'  element={<Login/>}></Route>
       </Routes>
     </Router>

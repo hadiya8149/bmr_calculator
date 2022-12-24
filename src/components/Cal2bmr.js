@@ -78,7 +78,7 @@ import CalorieForm from "./cal2form"
 
     }
     return(
-        <>
+        <div className="container">
         <div className="about">
         <p>
                 Welcome to our calorie calculator! Use this tool to determine your daily caloric needs and get personalized recommendations for maintaining or losing weight.
@@ -92,9 +92,9 @@ import CalorieForm from "./cal2form"
             Basal metabolic rate is the number of calories your body needs to accomplish its most basic (basal) life-sustaining functions.</p>
         <CalorieForm calform={calform} onChange={handleChange} onSubmit ={handleSumbit} onKeyDown={iptFiedCheck} />
 
-        <p id="bmr"> Your bmr is :  </p>
+        <h5 id="bmr"> Your bmr is :  </h5>
         </div>
-        </>
+        </div>
     );
 }
 // export default CalcForm;
