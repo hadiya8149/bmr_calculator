@@ -1,7 +1,9 @@
 import React from "react"
 export default function CalorieForm (props){
         return(
-            <form  id="calculate_calorie_form" onSubmit={props.onSubmit}>
+            <div className="form-panel p-5 d-flex flex-column w-100"> 
+            <div className="container h-100">
+            <form   id="calculate_calorie_form" onSubmit={props.onSubmit}>
                 <div className=" form-outline form-group row mb-12">
                     <label htmlFor="gender" className="col-sm-1 col-form-label">
                         Gender
@@ -64,5 +66,7 @@ export default function CalorieForm (props){
 
                     </div>
             </form>
+            </div>
+            </div>
         );
     }

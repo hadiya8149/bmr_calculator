@@ -26,6 +26,9 @@
   font-size:24px;
   text-align:left;
   padding: 25px;
+  position:absolute;
+  margin-bottom:10%;
+  left:15%;
 }
 ul{
   position:absolute;
@@ -50,10 +53,19 @@ input.form-control, select{
   width:300px;
 }
 .form-group{
-  align-items: baseline;
+  align-items:baseline;
   margin-bottom:12px;
-  justify-content:space-evenly;
-  margin-right:auto;
+}
+.col-form-label{
+  margin-right:50px;
+}
+#login_form > div.form-outline.form-group{
+  align-items: baseline;
+  margin-bottom: 12px;
+  justify-content: left;
+  margin-right: auto;
+  text-align: left;
+  padding-left: 14px;
 }
 #bmr{
   display:flex;
@@ -106,5 +118,37 @@ h5{
   .ipts-group{
     margin-left:100px;
   }
-
+  div.login-page > div.branding{
+    display:none;
+  }
+}
+@media screen and (max-width: 300px) {
+  .branding{
+    display:none;
+  }
+}
+.login-page{
+  display:flex;
+}
+.form-panel{
+  flex:1;
+}
+.branding{
+  display:flex;
+  flex:2;
+  background-color:#c4d3e3;
+  /* background-image:-moz-element() */
+  align-items: center;
+  text-align: center;
+  font-weight: 500;
+  padding: 60px;
+  color:white;
+}
+div.branding > div > h1{
+  font-weight:700;
+}
+#login_form{
+  width:100%;
+  margin:auto;
+  margin-top:20%;
 }

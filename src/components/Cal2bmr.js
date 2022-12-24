@@ -3,7 +3,7 @@ import React from "react"
 import CalorieForm from "./cal2form"
 // now we want to display the result on the main page
 
- const CalcForm = props=>{
+ export default function CalcForm(props){
 
     var bmr;
     const [calform, setCalForm] =useState({
@@ -78,6 +78,13 @@ import CalorieForm from "./cal2form"
 
     }
     return(
+        <>
+        <div className="about">
+        <p>
+                Welcome to our calorie calculator! Use this tool to determine your daily caloric needs and get personalized recommendations for maintaining or losing weight.
+
+            </p>
+             </div>
         <div className="main-content">
             
         <p id="info">
@@ -87,6 +94,7 @@ import CalorieForm from "./cal2form"
 
         <p id="bmr"> Your bmr is :  </p>
         </div>
+        </>
     );
 }
-export default CalcForm;
+// export default CalcForm;

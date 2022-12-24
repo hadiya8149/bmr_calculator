@@ -1,10 +1,12 @@
 import React from "react"
+
 import './App.css';
+import {Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import {Component} from"react"
 import Navbar from "./components/navbar"
 import About from "./components/about";
 import CalcForm from "./components/Cal2bmr";
-import Result from "./components/result";
+import Login from "./components/login"
 class App extends Component {
   constructor(props){
     super(props);
@@ -23,18 +25,16 @@ class App extends Component {
   }
   render(){
   return (
-    <div className="App">
-      
-      
+    <Router>
       <Navbar />
       <div className="logo">
         Cal2
       </div>
-      <About/>
-      <CalcForm />
-      <Result />
-
-    </div>
+      <Routes>
+        <Route exact path='/' element={<CalcForm />}></Route>
+        <Route path='/login'  element={<Login/>}></Route>
+      </Routes>
+    </Router>
   );
 }
 }
