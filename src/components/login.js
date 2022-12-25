@@ -8,7 +8,7 @@ class Login extends React.Component{
                 <div className="container">
                 <form id="login_form" method="post" >
                     {/* logo here */}
-                    <div className="form-outline form-group row mb-12">
+                    <div className="form-group row mb-12">
                         <input type="text" className="form-control" name="email" id="email" placeholder="Email or username"></input>
                     </div>
                     <div className="form-group row mb-12">
