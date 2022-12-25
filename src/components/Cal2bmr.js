@@ -52,15 +52,7 @@ import CalorieForm from "./cal2form"
         }
         return bmr
     }
-    const root = document.getElementById('root')
-    function paraBMR(ans){
-        const element = (
-            <p>
-                Your BMR is : {ans}
-            </p>
-        )
-        root.render(element);
-    }
+    
     function handleChange(event){
         const updatedForm = {...calform, [event.target.name]:event.target.value}
         setCalForm(updatedForm)
