@@ -4,8 +4,8 @@ import './App.css';
 import {Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import {Component} from"react"
 import Navbar from "./components/navbar"
-import CalcForm from "./components/Cal2bmr";
-import Login from "./components/login"
+import {CalcForm} from "./components/Cal2bmr";
+import {Login} from "./components/login"
 class App extends Component {
   constructor(props){
     super(props);
@@ -30,8 +30,8 @@ class App extends Component {
         Cal2
       </div>
       <Routes>
-        <Route index path='/' component={<CalcForm />}></Route>
-        <Route  path='/login'  component={<Login/>}></Route>
+        <Route index path='/' component={CalcForm}></Route>
+        <Route  path='/login'  component={Login}></Route>
       </Routes>
     </Router>
   );
