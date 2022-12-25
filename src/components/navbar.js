@@ -1,4 +1,6 @@
 import React from "react"
+import Login from "./login"
+import {Link} from "react-router-dom"
 export default function Navbar(){
     return(
         <nav className="navbar navbar-expand-sm nabar-toggler navbar-light bg-light">
@@ -22,7 +24,8 @@ export default function Navbar(){
 
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/login">Login</a>
+                            <Link to="/login" className="nav-link"><a className="nav-link" href="/login">Login</a></Link>
+                            
 
                         </li>
                     </ul>

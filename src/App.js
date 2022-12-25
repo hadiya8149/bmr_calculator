@@ -30,7 +30,7 @@ class App extends Component {
         Cal2
       </div>
       <Routes>
-        <Route index path='/' elementgi={<CalcForm/>}></Route>
+        <Route index path='' element={<CalcForm/>}></Route>
         <Route  path='/login'  element={<Login />}></Route>
       </Routes>
     </Router>
